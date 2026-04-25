@@ -16,5 +16,11 @@ URL = "wss://broker.dadavidtseng.com/kadi"
 NETWORKS = ["global"]
 
 [secrets]
-VAULTS = ["model-manager", "anthropic"]
-KEYS = ["MODEL_MANAGER_API_KEY", "MODEL_MANAGER_BASE_URL"]
+VAULTS = ["model-manager", "anthropic", "arcadedb"]
+KEYS = ["MODEL_MANAGER_API_KEY", "MODEL_MANAGER_BASE_URL", "ARCADE_USERNAME", "ARCADE_PASSWORD"]
+
+[arcadedb]
+HOST = "arcadedb.dadavidtseng.com"
+PORT = 443
+USERNAME = "root"
+DATABASE = "agents_logs"
